@@ -5,5 +5,5 @@ rules and the solutions are entirely my own and what I submitted to FB.
 
 ## Qualification
 
-![img](http://cl.ly/image/3Q0E0d2a072I/Screen%20Shot%202013-01-28%20at%2011.17.16.png)
+![img](http://f.cl.ly/items/0N1s023G2h0o3p0E3d3Y/Screen%20Shot%202013-02-02%20at%2016.47.36.png)
  
