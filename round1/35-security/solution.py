@@ -44,14 +44,10 @@ def solution(n, k1, k2):
     # print 'k1=%r' % k1
     # print 'k2=%r' % k2
 
+    # Grouped copy of k1.
     lk1 = grouper(k1, n)
-    # print 'lk1=%r' % lk1
 
-    lk2 = map(lambda w: grouper(w, n), roll_string(k2))
-    # print 'lk2=%r' % lk2
-
-    for possible_k2 in lk2:
-        # print '  - possible_k2=%r' % (list(possible_k2))
+    for possible_k2 in map(lambda w: grouper(w, n), roll_string(k2)):
         if possible_match(lk1, possible_k2):
             # print 'possible_match=%r' % list(possible_k2)
             pk2 = ''.join(possible_k2)

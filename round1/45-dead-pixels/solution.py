@@ -44,17 +44,14 @@ def solution(W, H, P, Q, N, X, Y, a, b, c, d):
                 for x in xrange(x_start, x_start + P):
                     if (x, y) in dead_pixels:
                         contains_dead_pixel = True
-                        # print ' X %r' % ((x, y),)
                         break
-
-                    # print ' - %r' % ((x, y),)
 
                 if contains_dead_pixel:
                     break
 
             if not contains_dead_pixel:
                 offset = (x_start, y_start)
-                # print 'offset=%r' % (offset, )
+                # print 'offset=%r' % (offset,)
                 offsets.add(offset)
 
     # print 'offsets=%r' % sorted(offsets)

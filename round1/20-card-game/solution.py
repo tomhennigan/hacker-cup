@@ -1,4 +1,4 @@
-import itertools
+from itertools import combinations
 
 def read_file(input_file):
     with open(input_file, 'r') as fp:
@@ -18,13 +18,9 @@ def read_file(input_file):
 
 def solution(N, K, a):
     # print 'N=%r, K=%r, a=%r' % (N, K, a)
-    # N == len(a)
-    # K == subset_size
-    # a[i] % 1000000007
-    # map(lambda a: a % 1000000007)
 
     the_sum = 0
-    for combination in itertools.combinations(a, K):
+    for combination in combinations(a, K):
         the_sum += max(combination)
         the_sum %= 1000000007
 
